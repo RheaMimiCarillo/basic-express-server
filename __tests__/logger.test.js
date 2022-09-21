@@ -27,6 +27,6 @@ describe('testing logger middleware', () =>
 
     logger(req, res, next);
 
-    expect(console.log.toHaveBeenCalledWith("REQUEST METHOD: " + req.method, "REQUEST PATH: " + req.path);
+    expect(console.log).toHaveBeenCalledWith('REQUEST METHOD: ' + req.method, 'REQUEST PATH: ' + req.path);
   });
 });
